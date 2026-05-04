@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english, russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage[hidelinks]{hyperref}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Гришин Алексей} \\ \vspace{1pt}
+    \small +7 (964) 578-60-87 $|$ 
+    \href{https://t.me/segtree}{t.me/segtree} $|$
+    \href{mailto:int28t@ya.ru}{int28t@ya.ru} $|$ 
+    \href{https://github.com/int28t}{github.com/int28t}
+\end{center}
+
+
+%─────────────────────────────
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {НИУ ВШЭ}{Москва}
+      {Бакалаврская программа <<Программная инженерия>>}{Сентябрь 2025 -- н.в.}
+  \resumeSubHeadingListEnd
+%─────────────────────────────
+
+%─────────────────────────────
+\section{Дополнительное образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Компьютерные сети}{Онлайн}
+      {Курс Т-Образования}{Январь 2026 -- н.в.}
+    \resumeSubheading
+      {Яндекс Лицей}{Онлайн}
+      {Специализация <<Веб‑разработка на Go>>}{Февраль 2026 -- Апрель 2026}
+    \resumeSubheading
+      {Введение в облачные технологии}{Москва}
+      {НИУ ВШЭ, Научно-исследовательский семинар}{Сентябрь 2025 -- Март 2026}
+    % \resumeSubheading
+    %   {HSE Huawei Techarena Training Camp}{Москва}{Сборы к полуфиналу ICPC}{Октябрь 2025}
+    % \resumeSubheading
+    %   {Т-Поколение}{Москва}
+    %   {Алгоритмы и структуры данных}{Сентябрь 2024 -- Май 2025}
+    % \resumeSubheading
+    %   {Яндекс Кружок}{Москва}
+    %   {Олимпиадное программирование}{Сентябрь 2023 -- Май 2024}
+  \resumeSubHeadingListEnd
+%─────────────────────────────
+
+%─────────────────────────────
+\section{Проекты}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/int28t/trackflow}{TrackFlow}} $|$ \emph{Go, PostgreSQL, Docker, REST API}}{Апрель 2026}
+        \resumeItemListStart
+          \resumeItem{Разработал микросервисную систему из 5 сервисов для трекинга заказов}
+          \resumeItem{Спроектировал REST API и API Gateway для единой точки входа}
+          \resumeItem{Реализовал ключевые сценарии: создание и обновление заказов, статусы доставки, синхронизацию статусов перевозчика}
+          \resumeItem{Настроил БД и локальную инфраструктуру на PostgreSQL и Docker Compose}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%─────────────────────────────
+
+%─────────────────────────────
+% \section{Навыки}
+%  \begin{itemize}[itemsep=0pt]{
+%      \item Go, C++ \\
+%      \item микросервисы, REST API, HTTP, OpenAPI/Swagger, Docker Compose \\
+%      \item PostgreSQL, Redis \\
+%      \item Git, Docker, GitLab CI, Postman, VS Code, GoLand, CLion, PyCharm, Yandex Tracker \\
+%      \item pgx/v5, go-redis/v9 \\
+%      \item unit, integration, smoke, e2e
+%     }
+%  \end{itemize}
+
+\section{Навыки}
+\begin{itemize}[itemsep=2pt, topsep=2pt]
+    \item \textbf{Языки:} Go, C++
+    \item \textbf{Backend:} микросервисы, REST API, HTTP, OpenAPI
+    \item \textbf{Базы данных:} PostgreSQL, Redis
+    \item \textbf{Инфраструктура:} Docker, Docker Compose, GitLab CI
+    \item \textbf{Тестирование:} unit, integration, e2e
+\end{itemize}
+%─────────────────────────────
+
+%─────────────────────────────
+\section{Достижения}
+
+  \resumeSubHeadingListStart
+    % \resumeSubheading
+    %   {ICPC}{Москва}
+    %   {Участник квалификационного этапа}{2025}
+    \resumeSubheading
+      {Московская олимпиада школьников по информатике}{Москва}
+      {Призер}{2025}
+    \resumeSubheading
+      {Всероссийская олимпиада школьников по информатике}{Московская область}
+      {Региональный этап, Призер}{2025}
+    \resumeSubHeadingListEnd
+%─────────────────────────────
+\end{document}
